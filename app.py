@@ -27,9 +27,8 @@ import joblib
 import functools
 import plotly.express as px
 
-#loaded_model = joblib.load(filename='/home/linagb/mysite/bagging.model')
+
 loaded_model = joblib.load(filename="/home/lin/codebase/trivago_app/bagging.model")
-#data = pd.read_csv(r"/home/linagb/mysite/Data/train_set.csv")
 data = pd.read_csv(r"/home/lin/codebase/trivago_app/Data/train_set.csv")
 
 #%%
@@ -198,6 +197,6 @@ def toggle_project_description(proj_desc_button_clicked: str, is_open: bool) -> 
 
 
 if __name__=='__main__':
-    app.run_server(port=8088, debug=False, use_reloader=False)
+    app.run(port=8088, debug=False, use_reloader=False)
 
 
