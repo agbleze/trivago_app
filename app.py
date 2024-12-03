@@ -195,8 +195,5 @@ def toggle_project_description(proj_desc_button_clicked: str, is_open: bool) -> 
         return is_open
 
 
-
 if __name__=='__main__':
     app.run(port=8088, debug=False, use_reloader=False)
-
-
