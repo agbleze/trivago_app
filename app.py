@@ -50,7 +50,6 @@ app.validation_layout = html.Div(
      ]
 )
 
-
 # %%
 @app.callback(
     Output(component_id="main_content", component_property="children"),
@@ -193,7 +192,6 @@ def toggle_project_description(proj_desc_button_clicked: str, is_open: bool) -> 
         return not is_open
     else:
         return is_open
-
 
 if __name__=='__main__':
     app.run(port=8088, debug=False, use_reloader=False)
